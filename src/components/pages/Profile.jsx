@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { authContext } from '../provider/AuthProvider';
 import { Helmet } from 'react-helmet-async';
+import UpdateProfile from './UpdateProfile';
 
 const Profile = () => {
     const {user} = useContext(authContext);
@@ -27,9 +28,10 @@ const Profile = () => {
                 </div>
                 <h3 className="mt-4 text-xl font-semibold">{user.displayName}</h3>
                 <p className="text-gray-600">{user.email}</p>
-                <button className="bg-gradient-to-r from-[#2E948E] to-[#ecab4a] text-white px-20 text-xl mt-14 py-3 rounded-lg">
+                <button onClick = {()=> document.getElementById('my_modal_4').showModal()} className="bg-gradient-to-r from-[#2E948E] to-[#ecab4a] text-white px-20 text-xl mt-14 py-3 rounded-lg">
                     Update
                 </button>
+                <UpdateProfile></UpdateProfile>
             </div>
         </div>
     );
