@@ -37,7 +37,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         {navlink}
                     </ul>
                 </div>
@@ -55,9 +55,9 @@ const Navbar = () => {
                         <div className='flex items-center gap-5'>
                             <div className="tooltip tooltip-left" data-tip={user.displayName}>
 
-                            <Link to={'/profile'}>
-                                <img src={user.photoURL} className="h-16 w-16 rounded-full object-cover" alt="" />
-                            </Link>
+                                <Link to={'/profile'}>
+                                    <img src={user.photoURL} className="h-16 w-16 rounded-full object-cover" alt="" />
+                                </Link>
                             </div>
 
                             <button onClick={handleLogOut} className="btn bg-gradient-to-r from-[#2E948E] to-[#ecab4a] text-white text-center px-7 py-2 text-lg">Log Out</button>

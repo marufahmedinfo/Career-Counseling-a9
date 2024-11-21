@@ -19,12 +19,15 @@ const AuthProvider = ({ router }) => {
     const googleProvider = new GoogleAuthProvider();
     // console.log(router)
     const handleRegister = (email, password) => {
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
     const handleLogin = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
     const handleGoogleLogin = () => {
+        setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
     const updateProfileProfile = (updateData) => {

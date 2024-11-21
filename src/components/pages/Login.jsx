@@ -4,14 +4,11 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
 import { authContext } from '../provider/AuthProvider';
-import { sendPasswordResetEmail } from 'firebase/auth';
-import auth from '../../firebase/firebase.config';
 import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const emailRef = useRef();
     const { handleGoogleLogin, handleLogin, setUser } = useContext(authContext);
     const [showPassword, setShowPassword] = useState(false)
     const [error, setError] = useState('')
@@ -23,10 +20,12 @@ const Login = () => {
         // console.log(email, password)
         handleLogin(email, password)
             .then(result => {
+                navigate(location.state.from)
                 const user = result.user;
                 // console.log(user)
                 setUser(user)
-                navigate(location.state.from)
+                alert('Your SuccessFully Login')
+
                 
             })
             .catch(error => {
@@ -35,7 +34,7 @@ const Login = () => {
     };
     const handlegoogolelgoin = () => {
         handleGoogleLogin()
-        .then(res => {
+        .then(() => {
             navigate(location.state.from)
 
         })
@@ -74,7 +73,7 @@ const Login = () => {
                         }
                     </button>
                     <label className="label">
-                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                        <Link to={'/forgotPassword'} href="#" className="label-text-alt link link-hover">Forgot password?</Link>
                     </label>
                     {
                         error && <p className="text-red-500">{error.split("/")[1].slice(0, 18)}</p>

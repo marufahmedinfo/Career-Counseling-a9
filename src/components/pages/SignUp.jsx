@@ -19,7 +19,8 @@ const SignUp = () => {
         const photos = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(names, photos, email, password)
+
+        // console.log(names, photos, email, password)
         if (password.length < 6) {
             setError("Password must contain at least 6 characters")
             return;
@@ -43,6 +44,7 @@ const SignUp = () => {
                 })
                     .then(() => {
                         navigate('/')
+                        alert('Your SuccessFully Register')
                     })
                     .catch(error => {
                         setError(error)

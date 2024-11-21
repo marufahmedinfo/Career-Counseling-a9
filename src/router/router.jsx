@@ -10,6 +10,7 @@ import Login from '../components/pages/Login';
 import PrivetRoutes from '../components/PrivetRoutes/PrivetRoutes';
 import Profile from '../components/pages/Profile';
 import AboutUs from '../components/AboutUs';
+import ResetPassword from '../components/pages/ResetPassword.jsx';
 
 
 const router = createBrowserRouter ([
@@ -55,6 +56,10 @@ const router = createBrowserRouter ([
             {
                 path: "/login",
                 element: <Login />
+            },
+            {
+                path: "/forgotPassword",
+                element: <ResetPassword />
             }
         ]
     }

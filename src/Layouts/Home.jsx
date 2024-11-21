@@ -11,7 +11,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className='relative'>
             <Banner />
             <div className='md:my-24'>
                 <h1 className='text-center font-bold text-4xl text-[#2E948E] my-12'>Our Services</h1>
