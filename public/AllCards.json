@@ -1,0 +1,271 @@
+[
+    {
+        "id": "service_001",
+        "img_url": "https://i.ibb.co.com/vJQtWqC/cart-12.jpg",
+        "service_name": "Career Counseling Sessions",
+        "category": "Online",
+        "description": "Our personalized career counseling sessions are designed to guide individuals in understanding their career interests, skills, and goals. Whether you’re a student, a professional seeking a change, or someone looking to restart your career, these sessions provide a structured approach to identifying the right opportunities. We analyze current market trends and provide tools to help you excel in your chosen career.",
+        "pricing": "$30",
+        "duration": "05-12-24 3-4pm",
+        "counselor": "Dr. Emily Brown",
+        "rating": 4.9,
+        "learn_more_url": "https://example.com/career-counseling",
+        "additional_info": {
+            "mode": "Zoom",
+            "topics_covered": [
+                "Career Planning",
+                "Skill Gap Analysis",
+                "Industry Insights",
+                "Resume Feedback"
+            ]
+        }
+    },
+    {
+        "id": "service_002",
+        "img_url": "https://i.ibb.co.com/fSLkPfZ/cart-10.jpg",
+        "service_name": "College Planning",
+        "category": "Group",
+        "description": "Navigating the complexities of higher education can be daunting. Our college planning service is here to simplify the process for students and parents. From selecting the right courses and universities to understanding financial aid options, we provide a comprehensive approach to planning your academic journey. Our counselors specialize in tailoring strategies for undergraduate and postgraduate programs, ensuring you have the support you need to make confident decisions for your future.",
+        "pricing": "$25",
+        "duration": "06-12-24 4-5pm",
+        "counselor": "Ms. Rachel Johnson",
+        "rating": 4.7,
+        "learn_more_url": "https://example.com/college-planning",
+        "additional_info": {
+            "group_size": "Up to 15 participants",
+            "mode": "In-person or Online",
+            "topics_covered": [
+                "Course Selection",
+                "Scholarships and Financial Aid",
+                "Application Deadlines"
+            ]
+        }
+    },
+    {
+        "id": "service_003",
+        "img_url": "https://i.ibb.co.com/DLq0wVj/cart-8.jpg",
+        "service_name": "Study Abroad Assistance",
+        "category": "Offline",
+        "description": "Planning to study abroad? Our expert counselors will help you navigate the complexities of applying to universities worldwide. From choosing the right destination and course to managing the visa application process and understanding funding options, we provide a step-by-step guide to make your dream a reality. Additionally, our guidance ensures that students are well-prepared to adapt to different cultures and academic environments.",
+        "pricing": "$50",
+        "duration": "07-12-24 2-3pm",
+        "counselor": "Mr. David Carter",
+        "rating": 4.8,
+        "learn_more_url": "https://example.com/study-abroad",
+        "additional_info": {
+            "group_size": "Up to 10 participants",
+            "mode": "In-person",
+            "topics_covered": [
+                "University Selection",
+                "Visa Applications",
+                "Cultural Adaptation Tips"
+            ]
+        }
+    },
+    {
+        "id": "service_004",
+        "img_url": "https://i.ibb.co.com/HqDc8NW/cart-4.jpg",
+        "service_name": "Resume Review",
+        "category": "Online",
+        "description": "A resume is often the first impression you make on an employer. Our resume review service ensures your resume is well-structured, highlights your skills effectively, and meets the expectations of applicant tracking systems (ATS). Receive detailed, personalized feedback to create a document that aligns with your career aspirations.",
+        "pricing": "$20",
+        "duration": "08-12-24 6-7pm",
+        "counselor": "Ms. Anna Wilson",
+        "rating": 4.6,
+        "learn_more_url": "https://example.com/resume-review",
+        "additional_info": {
+            "mode": "Zoom",
+            "includes": [
+                "Detailed Feedback",
+                "Formatting Tips",
+                "Industry-Specific Suggestions"
+            ]
+        }
+    },
+    {
+        "id": "service_005",
+        "img_url": "https://i.ibb.co.com/pL3TSMN/cart-2.jpg",
+        "service_name": "Interview Preparation",
+        "category": "Individual",
+        "description": "Our interview preparation sessions are tailored to help you shine in any interview setting. We cover commonly asked questions, provide mock interviews, and offer strategies to boost confidence. Learn how to effectively present your skills and experiences while understanding what employers look for in candidates.",
+        "pricing": "$35",
+        "duration": "09-12-24 5-6pm",
+        "counselor": "Mr. James Lee",
+        "rating": 4.8,
+        "learn_more_url": "https://example.com/interview-prep",
+        "additional_info": {
+            "mode": "Google Meet",
+            "topics_covered": [
+                "Behavioral Questions",
+                "Technical Rounds",
+                "Salary Negotiation Tips"
+            ]
+        }
+    },
+    {
+        "id": "service_006",
+        "img_url": "https://i.ibb.co.com/3WR2Wbp/cart-7.jpg",
+        "service_name": "Time Management Workshops",
+        "category": "Group",
+        "description": "Managing your time effectively is a crucial skill in today’s fast-paced world. Our time management workshops provide actionable strategies to enhance your productivity, set priorities, and maintain a healthy work-life balance. Ideal for professionals and students alike, these workshops are interactive and focus on real-life scenarios.",
+        "pricing": "$40",
+        "duration": "10-12-24 3-5pm",
+        "counselor": "Dr. Karen Smith",
+        "rating": 4.5,
+        "learn_more_url": "https://example.com/time-management",
+        "additional_info": {
+            "group_size": "Up to 20 participants",
+            "mode": "Online",
+            "topics_covered": [
+                "Prioritization Techniques",
+                "Productivity Hacks",
+                "Goal Setting Frameworks"
+            ]
+        }
+    },
+    {
+        "id": "service_007",
+        "img_url": "https://i.ibb.co.com/RNW2ps8/cart-9.jpg",
+        "service_name": "Scholarship Guidance",
+        "category": "Individual",
+        "description": "Scholarships can make higher education more accessible and affordable. Our scholarship guidance service helps students identify opportunities that match their profile, craft compelling applications, and meet deadlines. Work with an expert to increase your chances of securing financial support for your studies.",
+        "pricing": "$30",
+        "duration": "11-12-24 4-5pm",
+        "counselor": "Ms. Olivia Davis",
+        "rating": 4.6,
+        "learn_more_url": "https://example.com/scholarship-guidance",
+        "additional_info": {
+            "mode": "Online",
+            "topics_covered": [
+                "Finding Scholarships",
+                "Writing Essays",
+                "Document Submission"
+            ]
+        }
+    },
+    {
+        "id": "service_008",
+        "img_url": "https://i.ibb.co.com/JkvcTrV/cart-3.jpg",
+        "service_name": "Career Explorations",
+        "category": "Offline",
+        "description": "Not sure what career is right for you? This service is designed to help you explore different options based on your interests, skills, and market demands. Through guided assessments and expert insights, we help you uncover paths you may not have considered.",
+        "pricing": "$25",
+        "duration": "12-12-24 2-3pm",
+        "counselor": "Dr. Ethan Harris",
+        "rating": 4.9,
+        "learn_more_url": "https://example.com/career-explorations",
+        "additional_info": {
+            "group_size": "Up to 12 participants",
+            "mode": "In-person",
+            "topics_covered": [
+                "Emerging Careers",
+                "Skill Mapping",
+                "Interest-Based Job Roles"
+            ]
+        }
+    },
+
+    {
+        "id": "service_009",
+        "img_url": "https://i.ibb.co.com/HqDc8NW/cart-4.jpg",
+        "service_name": "Soft Skills Training",
+        "category": "Group",
+        "description": "Develop essential communication, teamwork, and leadership skills through our interactive soft skills training sessions. Tailored for professionals and students, these workshops help improve workplace and interpersonal effectiveness.",
+        "pricing": "$45",
+        "duration": "13-12-24 10-12pm",
+        "counselor": "Ms. Sophia Taylor",
+        "rating": 4.7,
+        "learn_more_url": "https://example.com/soft-skills-training",
+        "additional_info": {
+            "group_size": "Up to 25 participants",
+            "mode": "Online",
+            "topics_covered": [
+                "Effective Communication",
+                "Team Collaboration",
+                "Conflict Resolution"
+            ]
+        }
+    },
+    {
+        "id": "service_010",
+        "img_url": "https://i.ibb.co.com/n1BRsg8/istockphoto-1391105408-612x612.jpg",
+        "service_name": "Job Market Trends Analysis",
+        "category": "Online",
+        "description": "Stay ahead of the curve with insights into the latest job market trends. Our experts provide data-driven analysis and forecasts, helping you make informed career decisions.",
+        "pricing": "$30",
+        "duration": "14-12-24 1-2pm",
+        "counselor": "Dr. William Martinez",
+        "rating": 4.8,
+        "learn_more_url": "https://example.com/job-market-analysis",
+        "additional_info": {
+            "mode": "Zoom",
+            "topics_covered": [
+                "Emerging Industries",
+                "In-Demand Skills",
+                "Job Market Forecasts"
+            ]
+        }
+    },
+    {
+        "id": "service_011",
+        "img_url": "https://i.ibb.co.com/F5Mps2H/Career-Counselling-Program.png",
+        "service_name": "Leadership Development Program",
+        "category": "Offline",
+        "description": "For aspiring leaders, our development program provides hands-on training in decision-making, conflict resolution, and strategic thinking. Learn from seasoned professionals and take your leadership skills to the next level.",
+        "pricing": "$60",
+        "duration": "15-12-24 9-11am",
+        "counselor": "Mr. Alexander Reed",
+        "rating": 4.9,
+        "learn_more_url": "https://example.com/leadership-program",
+        "additional_info": {
+            "group_size": "Up to 20 participants",
+            "mode": "In-person",
+            "topics_covered": [
+                "Decision-Making Skills",
+                "Team Management",
+                "Strategic Thinking"
+            ]
+        }
+    },
+    {
+        "id": "service_012",
+        "img_url": "https://i.ibb.co.com/CMBz65r/shutterstock-2171561101.jpg",
+        "service_name": "Freelancing Masterclass",
+        "category": "Individual",
+        "description": "Learn how to build a successful freelancing career with tips on client acquisition, portfolio building, and project management. Ideal for creative professionals and remote workers.",
+        "pricing": "$50",
+        "duration": "16-12-24 5-6pm",
+        "counselor": "Ms. Natalie Foster",
+        "rating": 4.7,
+        "learn_more_url": "https://example.com/freelancing-masterclass",
+        "additional_info": {
+            "mode": "Google Meet",
+            "topics_covered": [
+                "Finding Clients",
+                "Negotiation Strategies",
+                "Building a Portfolio"
+            ]
+        }
+    },
+    {
+        "id": "service_013",
+        "img_url": "https://i.ibb.co.com/TqrxjMc/career-counselling-know-whats-better-9th-10th-12th-grade-students.jpg",
+        "service_name": "Personal Branding Workshop",
+        "category": "Group",
+        "description": "Build a strong personal brand that helps you stand out in your industry. This workshop covers personal storytelling, social media strategies, and reputation management.",
+        "pricing": "$40",
+        "duration": "17-12-24 3-5pm",
+        "counselor": "Mr. Ethan Cooper",
+        "rating": 4.6,
+        "learn_more_url": "https://example.com/personal-branding",
+        "additional_info": {
+            "group_size": "Up to 15 participants",
+            "mode": "Online",
+            "topics_covered": [
+                "Brand Storytelling",
+                "Social Media Management",
+                "Reputation Building"
+            ]
+        }
+    }
+]
