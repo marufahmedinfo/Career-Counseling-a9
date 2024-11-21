@@ -13,11 +13,11 @@ const UpdateProfile = () => {
         })
         .then(res => {
             console.log(res)
+            alert('Your SuccessFully Update')
         })
 
     }
     return (
-        // <button className="btn" onClick = {()=> document.getElementById('my_modal_4').showModal()}> open modal</button >
         <dialog id="my_modal_4" className="modal">
             <div className="modal-box w-11/12 max-w-5xl">
                 <form onSubmit={handleUpdate}>
