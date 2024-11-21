@@ -1,14 +1,16 @@
 import { updateProfile } from 'firebase/auth';
-import React from 'react';
+import React, { useContext } from 'react';
 import auth from '../../firebase/firebase.config';
+import { authContext } from '../provider/AuthProvider';
 
 const UpdateProfile = () => {
+    const {updateProfileProfile} = useContext(authContext)
     const handleUpdate = (e) => {
         e.preventDefault();
         const names = e.target.name.value;
         const photos = e.target.photo.value;
         
-        updateProfile(auth.currentUser,{
+        updateProfileProfile({
             displayName: names, photoURL: photos
         })
         .then(res => {
