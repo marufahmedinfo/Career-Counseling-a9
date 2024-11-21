@@ -1,13 +1,17 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
 import { authContext } from '../provider/AuthProvider';
+import { sendPasswordResetEmail } from 'firebase/auth';
+import auth from '../../firebase/firebase.config';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
+    const emailRef = useRef();
     const { handleGoogleLogin, handleLogin, setUser } = useContext(authContext);
     const [showPassword, setShowPassword] = useState(false)
     const [error, setError] = useState('')
@@ -33,10 +37,14 @@ const Login = () => {
         handleGoogleLogin()
         .then(res => {
             navigate(location.state.from)
+
         })
     }
     return (
         <div className="card bg-base-100 w-full mx-auto mt-32 max-w-md shrink-0 shadow-2xl">
+            <Helmet>
+            <title>Login| Career Counseling</title>
+        </Helmet>
             <h1 className="text-5xl font-bold ml-8 text-[#2E948E]">Login now!</h1>
             <form onSubmit={handleLoginUser} className="card-body">
                 <div className="form-control">

@@ -1,17 +1,21 @@
 import React, { useContext } from 'react';
 import { authContext } from '../provider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const Profile = () => {
     const {user} = useContext(authContext);
     return (
         <div className="flex justify-center items-center mt-10">
+            <Helmet>
+            <title>profile| Career Counseling</title>
+        </Helmet>
             <div className="w-[500px] h-[500px] bg-white rounded-xl shadow-lg p-6 text-center">
                 <div className="bg-gradient-to-r from-[#2E948E] to-[#ecab4a] rounded-t-xl -mt-10 -mx-6 p-20">
-                    <h2 className="text-white text-2xl font-bold">
+                    <h2 className="text-white text-3xl font-semibold">
                         <span role="img" aria-label="wave">
                             👋
                         </span>{" "}
-                        Welcome
+                        Welcome {user.displayName}
                     </h2>
                 </div>
                 <div className="relative -mt-12">

@@ -1,11 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
 import { authContext } from '../provider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const SignUp = () => {
+    const location = useLocation();
     const navigate = useNavigate();
     const { handleRegister, handleGoogleLogin, updateProfileProfile, setUser } = useContext(authContext);
     const [showPassword, setShowPassword] = useState(false)
@@ -51,10 +53,14 @@ const SignUp = () => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.log(errorCode, errorMessage)
+                setError('already-in-use')
             });
     }
     return (
         <div className="card bg-base-100 w-full mx-auto mt-32 max-w-md shrink-0 shadow-2xl">
+            <Helmet>
+                <title>Register| Career Counseling</title>
+            </Helmet>
             <h1 className="text-5xl font-bold ml-8 text-[#2E948E]">Register now</h1>
             <form onSubmit={handleRegisters} className="card-body">
                 <div className="form-control">

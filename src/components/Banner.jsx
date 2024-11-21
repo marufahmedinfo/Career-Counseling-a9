@@ -2,10 +2,14 @@ import React from 'react';
 import bannerImg1 from '../assets/banner (1).jpg'
 import bannerImg2 from '../assets/banner (2).jpg'
 import bannerImg3 from '../assets/banner (3).jpg'
+import { Helmet } from 'react-helmet-async';
 
 const Banner = () => {
     return (
         <div>
+            <Helmet>
+                <title>Career Counseling| Home</title>
+            </Helmet>
             <div className="carousel md:h-[500px] object-cover w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img

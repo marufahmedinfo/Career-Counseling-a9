@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData } from 'react-router-dom';
 
 const Details = () => {
@@ -8,11 +9,13 @@ const Details = () => {
         e.preventDefault();
         const textarea = e.target.comment.value;
         setComments(textarea)
-        
 
     }
     return (
         <div className='my-16'>
+            <Helmet>
+                <title>Details | Career Counseling</title>
+            </Helmet>
 
             <div className="rounded-lg p-4 mx-auto shadow-lg text-xl mb-4">
                 <img
