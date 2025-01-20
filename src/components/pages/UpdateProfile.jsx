@@ -1,22 +1,20 @@
-import { updateProfile } from 'firebase/auth';
 import React, { useContext } from 'react';
-import auth from '../../firebase/firebase.config';
 import { authContext } from '../provider/AuthProvider';
 
 const UpdateProfile = () => {
-    const {updateProfileProfile} = useContext(authContext)
+    const { updateProfileProfile } = useContext(authContext)
     const handleUpdate = (e) => {
         e.preventDefault();
         const names = e.target.name.value;
         const photos = e.target.photo.value;
-        
+
         updateProfileProfile({
             displayName: names, photoURL: photos
         })
-        .then(res => {
-            console.log(res)
-            alert('Your SuccessFully Update')
-        })
+            .then(res => {
+                console.log(res)
+                alert('Your SuccessFully Update')
+            })
 
     }
     return (
@@ -46,8 +44,8 @@ const UpdateProfile = () => {
                             required />
                     </div>
                     <div className="form-control mt-6">
-                    <button className="btn bg-gradient-to-r from-[#2E948E] to-[#ecab4a] text-white text-lg">Update</button>
-                </div>
+                        <button className="btn bg-gradient-to-r from-[#2E948E] to-[#ecab4a] text-white text-lg">Update</button>
+                    </div>
                 </form>
                 <div className="modal-action">
                     <form method="dialog">
